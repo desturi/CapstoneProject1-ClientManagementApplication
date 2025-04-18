@@ -1,0 +1,26 @@
+form {
+    max-width: 300px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+  }
+  
+  #Register{
+    border-top: 1px solid #ccc;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 6px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+  }
+
+  button{
+    margin-top: 6px;
+  }

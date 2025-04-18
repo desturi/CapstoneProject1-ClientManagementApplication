@@ -1,0 +1,44 @@
+<!-- Create a Client Form -->
+ <div class="container">
+    <h1>Create a Client</h1>
+    <h4>Please fill in the form to create a client.</h4>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter Name" required />
+        
+        <label for="email">Email</label>
+        <input type="text" name="Email" id="Email" placeholder="Enter Email" required />
+   
+        <label for="address">Address</label>   
+        <input type="text" name="Address" id="Address" placeholder="Enter Address" required />
+
+        <label for="password">Password</label>
+        <input type="text" name="Password" id="Password" placeholder="Enter Password" required />
+
+        <label for="repeatPassword">Repeat Password</label>
+        <input type="text" name="repeatPassword" id="repeatPassword" placeholder="Repeat Password" required />
+
+        <div id="Register">
+            <button type="submit">Register</button>
+        </div>
+       
+    </form>
+</div>
+
+
+
+<script>
+    // Simple validation for client form
+    document.getElementById("clientForm").addEventListener("submit", function (e) {
+      const pass = document.getElementById("password").value;
+      const repeat = document.getElementById("repeatPassword").value;
+
+      if (pass !== repeat) {
+        alert("Passwords do not match!");
+        e.preventDefault();
+      } else {
+        alert("Client Registered Successfully!");
+      }
+    });
+</script>
+

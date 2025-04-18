@@ -1,0 +1,12 @@
+.title{
+    text-align: center;
+    font-style: normal;
+    color: rgb(0, 136, 255);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 30px;
+}
